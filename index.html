@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+
+    <!-- Font Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Font -->
+  </head>
+  <body class="text-gray-800 bg-gray-100 font-Ubuntu">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 z-10 w-full px-6 py-4 text-white bg-indigo-700 shadow-xl font-Poppins"
+    >
+      <div class="flex items-center justify-between max-w-6xl mx-auto">
+        <div class="text-xl font-bold tracking-wide">Portofolio</div>
+        <div class="flex gap-6">
+          <a href="/index.html" class="transition hover:text-gray-300"
+            >Home</a
+          >
+          <a href="/form.html" class="transition hover:text-gray-300"
+            >Kerjasama</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <section
+      class="pb-16 text-center text-white bg-indigo-600 shadow-inner pt-28"
+    >
+      <h1 class="text-2xl font-bold uppercase lg:text-5xl font-Poppins">
+        Personal Portofolio
+      </h1>
+    </section>
+
+    <!-- About -->
+    <section
+      class="grid max-w-6xl grid-cols-1 gap-8 px-4 py-10 mx-auto lg:grid-cols-5"
+    >
+      <!-- Photo -->
+      <div class="flex items-center justify-center lg:col-span-2">
+        <img
+          src="/image/2.jpg"
+          alt="Arnoldus Alam Bili"
+          class="object-cover w-64 h-64 shadow-md rounded-xl"
+        />
+      </div>
+      <!-- Text -->
+      <div class="p-6 bg-white shadow-md lg:col-span-3 rounded-xl">
+        <h2 class="text-lg text-gray-600">Halo, nama saya</h2>
+        <h1 class="mb-4 text-3xl font-bold">Arnoldus Alam Bili</h1>
+        <p
+          class="text-justify leading-relaxed max-h-[400px] overflow-y-auto pr-1"
+        >
+          Saya adalah individu yang penuh semangat dalam pengembangan diri dan
+          teknologi. Dengan latar belakang di bidang desain dan pengalaman dalam
+          berbagai proyek antarmuka pengguna, saya memiliki ketertarikan khusus
+          pada estetika visual dan pengalaman pengguna yang intuitif. Saya juga
+          aktif mengeksplorasi teknologi front-end, seperti Tailwind CSS dan
+          JavaScript, untuk menciptakan solusi web yang efisien dan menarik.
+          Selain itu, saya menikmati kerja tim, pembelajaran berkelanjutan, dan
+          terus mencari peluang baru untuk tumbuh dan berkontribusi dalam
+          lingkungan yang dinamis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skill & Video -->
+    <section
+      class="grid max-w-6xl grid-cols-1 gap-8 px-4 py-10 mx-auto lg:grid-cols-5"
+    >
+      <!-- Skill Table -->
+      <div class="p-6 bg-white shadow-md lg:col-span-3 rounded-xl">
+        <h2 class="mb-4 text-xl font-semibold ">🎮 Skill and Interests</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border border-gray-300">
+            <thead class="text-indigo-800 bg-indigo-100">
+              <tr>
+                <th class="p-2">No</th>
+                <th class="p-2">Keahlian</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="p-2">1</td>
+                <td class="p-2">Bermain e-Fooball 2025</td>
+              </tr>
+              <tr>
+                <td class="p-2">2</td>
+                <td class="p-2">Bermain Mobile Legend</td>
+              </tr>
+              <tr>
+                <td class="p-2">3</td>
+                <td class="p-2">Bermain Free Fire</td>
+              </tr>
+              <tr>
+                <td class="p-2">4</td>
+                <td class="p-2">Bermain Block Blest</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Video -->
+      <div class="p-6 bg-white shadow-md lg:col-span-2 rounded-xl">
+        <h2 class="mb-4 text-xl font-semibold">📽️ Video</h2>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe
+            class="w-full rounded-lg aspect-video"
+            src="https://www.youtube.com/embed/RoYGKrkNWLg?si=JcLZWX6sQbNujonR"
+            title="YouTube Video"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri & Sosial Media -->
+    <section
+      class="grid max-w-6xl grid-cols-1 gap-8 px-4 py-10 mx-auto lg:grid-cols-5"
+    >
+      <!-- Galeri -->
+      <div class="p-6 bg-white shadow-md lg:col-span-3 rounded-xl">
+        <h2 class="pb-2 mb-4 text-xl font-bold border-b">📸 Foto Galeri</h2>
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+          <img
+            src="/image/gambar1.jpg"
+            class="object-cover w-full h-40 transition-all duration-200 transform rounded-lg shadow hover:scale-105"
+            alt="Galeri"
+          />
+          <img
+            src="/image/gambar2.jpg"
+            class="object-cover w-full h-40 transition-all duration-200 transform rounded-lg shadow hover:scale-105"
+            alt="Galeri"
+          />
+          <img
+            src="/image/gambar3.jpg"
+            class="object-cover w-full h-40 transition-all duration-200 transform rounded-lg shadow hover:scale-105"
+            alt="Galeri"
+          />
+          <img
+            src="/image/gambar4.jpg"
+            class="object-cover w-full h-40 transition-all duration-200 transform rounded-lg shadow hover:scale-105 md:hidden"
+            alt="Galeri"
+          />
+        </div>
+      </div>
+      <!-- Sosial Media -->
+      <div class="p-6 bg-white shadow-md lg:col-span-2 rounded-xl">
+        <h2 class="pb-2 mb-4 text-xl font-bold border-b">🔗 Sosial Media</h2>
+        <div class="space-y-4">
+          <a
+            href="https://www.facebook.com/profile.php?id=100090031701117"
+            target="_blank"
+            class="flex items-center gap-4 p-3 transition rounded-lg bg-blue-50 hover:bg-blue-100"
+          >
+            <svg
+              class="w-6 h-6 text-blue-600"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22.675 0h-21.35C.593 0 0 .593 0 1.326v21.348C0 23.408.593 24 1.325 24H12.82V14.706h-3.293v-3.622h3.293V8.413c0-3.268 1.993-5.043 4.905-5.043 1.396 0 2.597.104 2.946.15v3.42l-2.021.001c-1.585 0-1.892.754-1.892 1.861v2.44h3.784l-.493 3.622h-3.291V24h6.453c.73 0 1.323-.592 1.323-1.326V1.326C24 .593 23.408 0 22.675 0z"
+              />
+            </svg>
+            <span class="font-medium text-gray-800">Alam Bily</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/alambily_/"
+            target="_blank"
+            class="flex items-center gap-4 p-3 transition rounded-lg bg-pink-50 hover:bg-pink-100"
+          >
+           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><linearGradient id="a" x1="-37.106" x2="-26.555" y1="-72.705" y2="-84.047" gradientTransform="matrix(0 -1.982 -1.844 0 -132.522 -51.077)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".5" stop-color="#ff543e"></stop><stop offset="1" stop-color="#c837ab"></stop></linearGradient><path fill="url(#a)" d="M1.5 1.633C-.386 3.592 0 5.673 0 11.995c0 5.25-.916 10.513 3.878 11.752 1.497.385 14.761.385 16.256-.002 1.996-.515 3.62-2.134 3.842-4.957.031-.394.031-13.185-.001-13.587-.236-3.007-2.087-4.74-4.526-5.091C18.89.029 18.778.005 15.91 0 5.737.005 3.507-.448 1.5 1.633z" opacity="1" data-original="url(#a)" class=""></path><path fill="#ffffff" d="M11.998 3.139c-3.631 0-7.079-.323-8.396 3.057-.544 1.396-.465 3.209-.465 5.805 0 2.278-.073 4.419.465 5.804 1.314 3.382 4.79 3.058 8.394 3.058 3.477 0 7.062.362 8.395-3.058.545-1.41.465-3.196.465-5.804 0-3.462.191-5.697-1.488-7.375-1.7-1.7-3.999-1.487-7.374-1.487zm-.794 1.597c7.574-.012 8.538-.854 8.006 10.843-.189 4.137-3.339 3.683-7.211 3.683-7.06 0-7.263-.202-7.263-7.265 0-7.145.56-7.257 6.468-7.263zm5.524 1.471a1.063 1.063 0 1 0 0 2.126 1.063 1.063 0 0 0 0-2.126zm-4.73 1.243a4.55 4.55 0 1 0 .001 9.101 4.55 4.55 0 0 0-.001-9.101zm0 1.597c3.905 0 3.91 5.908 0 5.908-3.904 0-3.91-5.908 0-5.908z" opacity="1" data-original="#ffffff" class=""></path></g></svg>
+            </svg>
+            <span class="font-medium text-gray-800">@alambily_</span>
+            </a>
+            
+          <a
+            href="https://wa.me/+6282236496905?text=Hallo%20Bos"
+            target="_blank"
+            class="flex items-center gap-4 p-3 transition rounded-lg bg-green-50 hover:bg-green-100"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g fill-rule="evenodd"><path fill="#00d264" d="M48 64H16A16 16 0 0 1 0 48V16A16 16 0 0 1 16 0h32a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16" opacity="1" data-original="#00d264"></path><path fill="#00eb78" d="M30 18h18A9 9 0 0 0 48.92.046C48.614.029 48.311 0 48 0H16A16 16 0 0 0 0 16v32a30 30 0 0 1 30-30" opacity="1" data-original="#00eb78" class=""></path><path fill="#00b950" d="M48 32a16 16 0 1 0 16 16V16a16 16 0 0 1-16 16" opacity="1" data-original="#00b950"></path><g fill="#fff"><path d="M21.673 47.093a2.003 2.003 0 0 1 1.593.218 18.981 18.981 0 1 0-6.581-6.574 1.994 1.994 0 0 1 .216 1.588C16.344 44.296 15 49 15 49l6.673-1.907zm-8.454-4.359a23.002 23.002 0 1 1 8.047 8.047s-6.377 1.822-9.535 2.725a1.001 1.001 0 0 1-1.237-1.237l2.725-9.535z" fill="#ffffff" opacity="1" data-original="#ffffff"></path><path d="M21.981 24.786a18.703 18.703 0 0 0 17.224 17.352h.002a4.964 4.964 0 0 0 3.894-1.44l.698-.698a1.76 1.76 0 0 0 .515-1.243v-1.482a1.001 1.001 0 0 0-.553-.895l-4.459-2.229a1 1 0 0 0-1.155.187l-1.94 1.94a1.001 1.001 0 0 1-.903.274l-.009-.002a10 10 0 0 1-7.845-7.845l-.002-.009a1.001 1.001 0 0 1 .274-.903l1.94-1.94a1 1 0 0 0 .187-1.155l-2.229-4.459a1.001 1.001 0 0 0-.895-.553h-1.26a2.138 2.138 0 0 0-1.587.706l-.664.738a4.86 4.86 0 0 0-1.238 3.589l.005.067z" fill="#ffffff" opacity="1" data-original="#ffffff"></path></g></g></g></svg>
+            </svg>
+            <span class="font-medium text-gray-800">@alambily_</span>
+            </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="bg-indigo-600 py-14">
+      <h1 class="text-center text-white ">@2025 Alambili, Inc. All rights reserved</h1>
+    </footer>
+
+  </body>
+</html>

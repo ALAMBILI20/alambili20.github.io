@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- Font Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Font -->
+  </head>
+  <body class="text-gray-800 bg-gray-100 font-Ubuntu">
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 z-10 w-full px-6 py-4 text-white bg-indigo-700 shadow-xl font-Poppins"
+    >
+      <div class="flex items-center justify-between max-w-6xl mx-auto">
+        <div class="text-xl font-bold tracking-wide">Portofolio</div>
+        <div class="flex gap-6">
+          <a href="/index.html" class="transition hover:text-gray-300"
+            >Home</a
+          >
+          <a href="./form.html" class="transition hover:text-gray-300"
+            >Kerjasama</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <section
+      class="pb-16 text-center text-white bg-indigo-600 shadow-inner pt-28"
+    >
+      <h1 class="text-2xl font-bold uppercase lg:text-5xl font-Poppins">
+        Form Kerjasama
+      </h1>
+    </section>
+
+    <!-- FORM -->
+    <section class="max-w-6xl px-4 mx-auto">
+      <div class="container max-w-screen-lg mx-auto mt-10">
+        <form
+          action="post"
+          class="mb-10 overflow-hidden bg-white rounded-sm shadow-lg"
+        >
+          <div class="bg-indigo-500">
+            <h1
+              class="py-4 text-xl font-bold text-center text-white lg:text-2xl"
+            >
+              Formulir Penawar Kerjasama
+            </h1>
+          </div>
+
+          <div class="p-6">
+            <div class="mb-5 space-y-1">
+              <label for="nama">Nama <span class="text-red-600">*</span></label>
+              <input
+                required
+                type="text"
+                id="nama"
+                placeholder="Riky Bili"
+                class="w-full py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+              />
+            </div>
+
+            <div class="mb-5 space-y-1">
+              <label for="alamat"
+                >Alamat <span class="text-red-600">*</span></label
+              >
+              <input
+                required
+                type="text"
+                id="alamat"
+                placeholder="Surya nata no.14, Babarsari"
+                class="w-full py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+              />
+            </div>
+
+            <div class="mb-5 space-y-1">
+              <label for="nowa"
+                >Nomor Wa <span class="text-red-600">*</span></label
+              >
+              <input
+                required
+                type="text"
+                id="nowa"
+                placeholder="+62"
+                class="w-full py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+              />
+            </div>
+
+            <div class="mb-5 space-y-1">
+              <label for="email"
+                >Email <span class="text-red-600">*</span></label
+              >
+              <input
+                required
+                type="email"
+                id="email"
+                placeholder="rikybili@gmail.com"
+                class="w-full py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+              />
+            </div>
+
+            <div class="space-y-1">
+              <label class="block"
+                >Jenis Kelamin <span class="text-red-600">*</span></label
+              >
+              <div class="flex items-center gap-3 py-1 pl-2">
+                <input
+                  required
+                  type="radio"
+                  name="jk"
+                  id="laki"
+                  class="block py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 size-5"
+                />
+                <label for="laki">Laki-Laki</label>
+              </div>
+              <div class="flex items-center gap-3 py-1 pl-2">
+                <input
+                  required
+                  type="radio"
+                  name="jk"
+                  id="perem"
+                  class="block py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 size-5"
+                />
+                <label for="perem">Perempuan</label>
+              </div>
+            </div>
+
+            <hr class="mt-3 mb-3" />
+
+            <div class="space-y-1">
+              <label class="block"
+                >Bidang Kerjasama <span class="text-red-600">*</span></label
+              >
+              <div class="flex items-center gap-3 py-1 pl-2">
+                <input
+                  required
+                  type="checkbox"
+                  name="jk"
+                  id="multi"
+                  class="block py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 size-5"
+                />
+                <label for="multi">Multimedia</label>
+              </div>
+              <div class="flex items-center gap-3 py-1 pl-2">
+                <input
+                  required
+                  type="checkbox"
+                  name="jk"
+                  id="web"
+                  class="block py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 size-5"
+                />
+                <label for="web">Web Dev</label>
+              </div>
+              <div class="flex items-center gap-3 py-1 pl-2">
+                <input
+                  required
+                  type="checkbox"
+                  name="jk"
+                  id="fin"
+                  class="block py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 size-5"
+                />
+                <label for="fin">Fintech</label>
+              </div>
+            </div>
+
+            <hr class="mt-3 mb-3" />
+
+            <div class="space-y-1">
+              <label for="file"
+                >FIle penawaran <span class="text-red-600">*</span></label
+              >
+
+              <div class="pl-2">
+                <button
+                  type="button"
+                  class="flex text-white transition-all duration-100 transform bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 w-fit active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+                >
+                  <label class="px-2 py-1" for="file">Pilih File...</label>
+                </button>
+                <!-- <label
+                  for="file"
+                  class="block px-2 py-1 transition-all duration-100 transform bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 w-fit active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+                >
+                  <span class="text-white">Pilih File...</span>
+                </label> -->
+                <p class="mt-1 text-xs">Klik tombol diatas untuk memilih</p>
+                <input
+                  hidden
+                  required
+                  type="file"
+                  id="file"
+                  placeholder="file"
+                  class="w-full py-2 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+                />
+              </div>
+            </div>
+
+            <hr class="mt-3 mb-3" />
+
+            <div class="mb-5 space-y-1">
+              <label for="tgl"
+                >Tanggal Pelaksanaan <span class="text-red-600">*</span></label
+              >
+              <input
+                required
+                type="date"
+                id="tgl"
+                placeholder="tanggal"
+                class="w-full py-2 bg-gray-100 rounded ps-2 pe-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+              />
+            </div>
+
+            <div class="mb-5 space-y-1">
+              <label for="domi"
+                >Domisili <span class="text-red-600">*</span></label
+              >
+              <select
+                name="domi"
+                id="domi"
+                class="w-full py-2 bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ps-2 pe-2"
+              >
+                <option hidden value="">-- Pilih Domisili --</option>
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="surabaya">Surabaya</option>
+                <option value="medan">Medan</option>
+                <option value="makassar">Makassar</option>
+                <option value="semarang">Semarang</option>
+                <option value="yogyakarta">Yogyakarta</option>
+                <option value="palembang">Palembang</option>
+                <option value="denpasar">Denpasar</option>
+                <option value="balikpapan">Balikpapan</option>
+              </select>
+            </div>
+
+            <div class="space-y-1 my-7">
+              <div class="flex flex-row gap-2">
+                <button
+                  class="flex items-center gap-1 px-3 py-2 text-center text-white bg-indigo-600 rounded hover:bg-indigo-700 active:scale-95 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+                  type="submit"
+                >
+                  <span>Submit</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="23"
+                    height="23"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 24 24"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <g fill="#000">
+                        <path
+                          d="M12.707 4.293a1 1 0 0 0-1.414 0l-3 3a1 1 0 0 0 1.414 1.414L11 7.414V15a1 1 0 1 0 2 0V7.414l1.293 1.293a1 1 0 1 0 1.414-1.414z"
+                          fill="#ffffff"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                        <path
+                          d="M4 14a1 1 0 0 1 1 1v1c0 1.148.852 2 2 2h10c1.148 0 2-.852 2-2v-1a1 1 0 1 1 2 0v1c0 2.252-1.748 4-4 4H7c-2.252 0-4-1.748-4-4v-1a1 1 0 0 1 1-1z"
+                          fill="#ffffff"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+
+                <button
+                  class="flex items-center gap-1 px-3 py-2 text-center text-white bg-orange-600 rounded hover:bg-orange-700 active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-offset-2"
+                  type="submit"
+                >
+                  <span>Reset</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="23"
+                    height="23"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 64 64"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <g fill="#303030">
+                        <path
+                          d="M32 59a2 2 0 0 0 0-4 22.99 22.99 0 0 1-15.951-39.556v6.913a2 2 0 0 0 4 0V11.31a2 2 0 0 0-2-2H7a2 2 0 0 0 0 4h5.53A26.989 26.989 0 0 0 32 59zM32 5a2 2 0 0 0 0 4 22.995 22.995 0 0 1 15.951 39.563V41.81a2 2 0 0 0-4 0v11.048a2 2 0 0 0 2 2H57a2 2 0 0 0 0-4h-5.69A26.99 26.99 0 0 0 32 5z"
+                          fill="#fffbfb"
+                          opacity="1"
+                          data-original="#303030"
+                          class=""
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End FORM -->
+
+    <footer class="bg-indigo-600 py-14">
+      <h1 class="text-center text-white">
+        @2025 Alambili, Inc. All rights reserved
+      </h1>
+    </footer>
+  </body>
+</html>
