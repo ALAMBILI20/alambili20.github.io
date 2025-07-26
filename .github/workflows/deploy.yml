@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages # Nama workflow yang akan muncul di tab Actions GitHub
+
+on:
+  push:
+    branches:
+      - main # Workflow akan berjalan setiap kali ada push ke branch 'main'.
+               # Ganti 'main' jika branch utama Anda adalah 'master' atau nama lain.
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Job ini akan dijalankan di mesin virtual Ubuntu terbaru
+
+    steps:
+      - name: Checkout repository # Mengambil kode dari repositori Anda
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js # Mengatur lingkungan Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # <<< SESUAIKAN: Versi Node.js yang Anda gunakan
+
+      - name: Install dependencies # Menjalankan 'npm install' di lingkungan GitHub Actions
+        run: npm install
+
+      - name: Build project # Menjalankan perintah 'build' di lingkungan GitHub Actions
+        run: npm run build # Ini akan membuat folder 'dist' di lingkungan Actions
+
+      - name: Deploy to GitHub Pages # Menerapkan hasil build ke GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4 # Menggunakan GitHub Action pihak ketiga untuk mempermudah deployment
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # Token akses GitHub (disediakan otomatis)
+          publish_dir: ./dist # <<< PASTIKAN INI SESUAI: Folder output hasil build Anda
+          # cname: your-custom-domain.com # Opsional: Hapus komentar dan ganti jika Anda menggunakan custom domain
+          # publish_branch: gh-pages # Opsional: Hapus komentar ini jika Anda ingin deploy ke branch selain 'gh-pages'
